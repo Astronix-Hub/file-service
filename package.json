@@ -1,0 +1,63 @@
+{
+  "name": "file-service",
+  "version": "1.0.0",
+  "description": "Astronix File-Service",
+  "bugs": {
+    "url": "https://github.com/Astronix-Hub/file-service/issues"
+  },
+  "license": "ISC",
+  "author": "Felix Lau <felixliu553@gmail.com>",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "lint": "eslint src --fix --ext .ts",
+    "prettier": "prettier --write src",
+    "start": "node ./dist/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@graphql-yoga/subscription": "^5.0.1",
+    "@graphql-yoga/typed-event-target": "^3.0.0",
+    "altair-koa-middleware": "^7.3.3",
+    "dotenv": "^16.4.5",
+    "graphql": "^16.9.0",
+    "graphql-scalars": "^1.23.0",
+    "graphql-sse": "^2.5.3",
+    "graphql-upload": "^16.0.2",
+    "graphql-yoga": "^5.6.2",
+    "koa": "^2.15.3",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^12.0.1",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.21",
+    "nanoid": "^5.0.7",
+    "reflect-metadata": "^0.2.2",
+    "type-graphql": "^2.0.0-rc.2",
+    "typedi": "^0.10.0",
+    "winston": "^3.13.1"
+  },
+  "devDependencies": {
+    "@types/graphql-upload": "^16.0.7",
+    "@types/jest": "^29.5.12",
+    "@types/koa": "^2.15.0",
+    "@types/koa-mount": "^4.0.5",
+    "@types/koa-router": "^7.4.8",
+    "@types/koa-static": "^4.0.4",
+    "@types/lodash": "^4.17.7",
+    "@types/node": "^20.14.12",
+    "add": "^2.0.6",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-organize-imports": "^4.0.0",
+    "prettier-plugin-packagejson": "^2.5.1",
+    "ts-jest": "^29.2.3",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
